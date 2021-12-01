@@ -1,0 +1,4 @@
+[submodule "cmake"]
+	path = cmake
+	url = git@github.com:Glamhoth/cmake
+    branch = glamhoth-init-repo
