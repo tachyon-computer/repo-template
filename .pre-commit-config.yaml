@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: check-commit-msg
+        name: Check commit message
+        entry: sh/check-commit-msg.sh
+        stages: [commit-msg]
+        language: system
