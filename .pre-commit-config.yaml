@@ -1,3 +1,5 @@
+default_stages: [commit, manual]
+
 repos:
   - repo: local
     hooks:
@@ -5,4 +7,11 @@ repos:
         name: Check commit message
         entry: sh/check-commit-msg.sh
         stages: [commit-msg]
+        language: system
+
+      - id: check-license
+        name: Check if changed files includes correct license
+        entry: sh/check-license.sh
+        stages: [commit]
+        pass_filenames: false
         language: system
