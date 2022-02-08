@@ -28,8 +28,8 @@ jobs:
         run: |
           cmake -S . -B build -G Ninja \
             -D CMAKE_BUILD_TYPE=Release \
-            -D TOOLS_ENABLE_FORMATTING=OFF \
-            -D TOOLS_ENABLE_TAGS=OFF
+            -D TACHYON_TOOLS_ENABLE_FORMATTING=OFF \
+            -D TACHYON_TOOLS_ENABLE_TAGS=OFF
 
       - name: "Build"
         working-directory: ${{ github.workspace }}/build
