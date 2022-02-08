@@ -23,4 +23,5 @@ include(CTags)
 include(CompilerWarnings)
 include(CompilerSanitizers)
 
+add_subdirectory(extern)
 add_subdirectory(src)
