@@ -15,7 +15,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 add_library(CommonProjectOptions INTERFACE)
 include(CommonProjectOptions)
 
-include(CppCheck)
 include(ClangTidy)
 include(ClangFormat)
 include(CTags)

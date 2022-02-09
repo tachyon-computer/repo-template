@@ -1,6 +1,0 @@
-constParameter
-functionStatic
-missingIncludeSystem
-unmatchedSuppression
-unusedFunction
-*:src/app/*
