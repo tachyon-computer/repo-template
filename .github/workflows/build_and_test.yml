@@ -21,13 +21,20 @@ jobs:
       - name: "Install dependencies"
         run: |
           sudo apt-get update
-          sudo apt-get install -y ninja-build
+          sudo apt-get install -y \
+            clang-12 \
+            clang-tidy-12 \
+            ninja-build \
+           --install-suggests
+          sudo update-alternatives --install /usr/bin/clang-tidy clang-tidy /usr/bin/clang-tidy-12 30
 
       - name: "Configure build"
         working-directory: ${{ github.workspace }}
         run: |
           cmake -S . -B build -G Ninja \
+            -D CMAKE_CXX_COMPILER=clang++-12 \
             -D CMAKE_BUILD_TYPE=Release \
+            -D TACHYON_TOOLS_ENABLE_TIDY=ON \
             -D TACHYON_TOOLS_ENABLE_FORMATTING=OFF \
             -D TACHYON_TOOLS_ENABLE_TAGS=OFF
 
