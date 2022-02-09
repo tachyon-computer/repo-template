@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) 2022, Filip Demski <glamhoth@protonmail.com>
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
 #include "StubLib/lib.hh"
 
 #include <algorithm>
