@@ -34,6 +34,7 @@ jobs:
           cmake -S . -B build -G Ninja \
             -D CMAKE_CXX_COMPILER=clang++-12 \
             -D CMAKE_BUILD_TYPE=Release \
+            -D TACHYON_OPTIONS_BUILD_TESTING=ON \
             -D TACHYON_TOOLS_ENABLE_TIDY=ON \
             -D TACHYON_TOOLS_ENABLE_FORMATTING=OFF \
             -D TACHYON_TOOLS_ENABLE_TAGS=OFF

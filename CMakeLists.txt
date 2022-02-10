@@ -25,7 +25,7 @@ include(CompilerSanitizers)
 add_subdirectory(extern)
 add_subdirectory(src)
 
-if(BUILD_TESTING)
+if(BUILD_TESTING AND TACHYON_OPTIONS_BUILD_TESTING)
     enable_testing()
     add_subdirectory(tests)
 endif()
