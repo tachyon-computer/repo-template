@@ -60,3 +60,8 @@ jobs:
           lcov --directory . --gcov-tool llvm_gcov.sh --capture --output-file coverage.info
           lcov --remove coverage.info '/usr/*' "$GITHUB_WORKSPACE"'/extern/*' --output-file coverage.info
           lcov --list coverage.info
+
+      - uses: codecov/codecov-action@v2
+        with:
+          files: ./build/coverage.info
+          fail_ci_if_error: true
