@@ -9,7 +9,7 @@ target_include_directories(StubLib
     PUBLIC      ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_link_libraries(StubLib
     PRIVATE     CommonProjectOptions
-    PUBLIC      CodeCoverage)
+                CodeCoverage)
 
 add_format_target(StubLib)
 
