@@ -10,10 +10,20 @@
 #include <StubLib/lib.hh>
 
 TEST_CASE("stub lib", "[lib]") {
-    std::string testString = "test_string";
 
-    SECTION("capitalize works") {
+    SECTION("capitalize string") {
+        std::string testString = "test_string";
+
         lib::Lib::capitalize(testString);
+
         REQUIRE(testString == "TEST_STRING");
+    }
+
+    SECTION("empty string") {
+        std::string testString;
+
+        lib::Lib::capitalize(testString);
+
+        REQUIRE(testString.empty());
     }
 }
