@@ -12,15 +12,14 @@ set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/build/lib)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_library(CommonProjectOptions INTERFACE)
 include(CommonProjectOptions)
+include(CompilerWarnings)
+include(CompilerSanitizers)
+include(CodeCoverage)
 
 include(ClangTidy)
 include(ClangFormat)
 include(CTags)
-
-include(CompilerWarnings)
-include(CompilerSanitizers)
 
 add_subdirectory(extern)
 add_subdirectory(src)
