@@ -2,8 +2,8 @@
 
 Template for Tachyon projects
 
-![GitHub Actions](https://github.com/tachyon-computer/repo-template/actions/workflows/build_and_test.yml/badge.svg?branch=glamhoth-init-template) &nbsp;
-[![codecov](https://codecov.io/gh/tachyon-computer/repo-template/branch/glamhoth-init-template/graph/badge.svg?token=17P7YFDXYU)](https://app.codecov.io/gh/tachyon-computer/repo-template) &nbsp;
+![GitHub Actions](https://github.com/tachyon-computer/repo-template/actions/workflows/build_and_test.yml/badge.svg?branch=master) &nbsp;
+[![codecov](https://codecov.io/gh/tachyon-computer/repo-template/branch/master/graph/badge.svg?token=17P7YFDXYU)](https://codecov.io/gh/tachyon-computer/repo-template) &nbsp;
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ftachyon-computer%2Frepo-template.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Ftachyon-computer%2Frepo-template?ref=badge_shield) &nbsp;
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=tachyon-computer_repo-template&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=tachyon-computer_repo-template)  
 
