@@ -13,3 +13,5 @@ target_link_libraries(StubApp
                 Stub::Lib)
 
 add_format_target(StubApp)
+
+install(TARGETS StubApp)
