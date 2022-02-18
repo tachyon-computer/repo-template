@@ -1,8 +1,9 @@
 name: Run SonarCloud analysis
 
 on:
-  schedule:
-    - cron: '0 0 * * *' #Run at the end of the day
+  push:
+    branches:
+      - master
 
 jobs:
   analysis:
