@@ -1,7 +1,7 @@
 [submodule "cmake"]
 	path = cmake
-	url = git@github.com:Glamhoth/cmake
-    branch = glamhoth-init-repo
+	url = git@github.com:tachyon-computer/cmake
+    branch = master
 [submodule "extern/Catch2"]
 	path = extern/Catch2
 	url = https://github.com/catchorg/Catch2
