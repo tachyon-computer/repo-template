@@ -16,7 +16,7 @@ jobs:
   build_and_test:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           submodules: 'recursive'
 
@@ -64,7 +64,11 @@ jobs:
           lcov --remove coverage.info '/usr/*' "$GITHUB_WORKSPACE"'/extern/*' --output-file coverage.info
           lcov --list coverage.info
 
-      - uses: codecov/codecov-action@v2
+      - uses: codecov/codecov-action@v4
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         with:
-          files: ./build/coverage.info
           fail_ci_if_error: true
+          files: ./build/coverage.info
+          name: repo-template
+
